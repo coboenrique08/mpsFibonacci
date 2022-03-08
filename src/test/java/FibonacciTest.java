@@ -31,4 +31,39 @@ class FibonacciTest {
         int obtainedValue = fibonacci.compute(0);
         assertEquals(expectedValue, obtainedValue);
     }
+
+    @Test
+    public void shouldComputeOf1Return1() {
+        int expectedValue = 1;
+        int obtainedValue = fibonacci.compute(1);
+        assertEquals(expectedValue, obtainedValue);
+    }
+
+    @Test
+    public void shouldComputeOf2Return1() {
+        int expectedValue = 1;
+        int obtainedValue = fibonacci.compute(2);
+        assertEquals(expectedValue, obtainedValue);
+    }
+
+    @Test
+    public void shouldComputeOf3Return2() {
+        int expectedValue = 2;
+        int obtainedValue = fibonacci.compute(3);
+        assertEquals(expectedValue, obtainedValue);
+    }
+
+    @Test
+    public void shouldComputeOf4Return3() {
+        int expectedValue = 3;
+        int obtainedValue = fibonacci.compute(4);
+        assertEquals(expectedValue, obtainedValue);
+    }
+
+    @Test
+    public void shouldComputeOf5Return5() {
+        int expectedValue = 5;
+        int obtainedValue = fibonacci.compute(5);
+        assertEquals(expectedValue, obtainedValue);
+    }
 }
